@@ -7,11 +7,11 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Mo Milano Estética · estética facial e corporal</title>
 <meta name="description" content="Mo Milano Estética: tratamentos faciais e corporais com avaliação individual. Agende pelo WhatsApp.">
-<meta name="theme-color" content="#f7efe9">
+<meta name="theme-color" content="#f6f3ef">
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap">
 <link rel="stylesheet" href="assets/momilano.css">
 <script type="application/ld+json">
 {
@@ -25,132 +25,149 @@
 <body>
 <a class="pular" href="#conteudo">Pular para o conteúdo</a>
 
-<!-- Faixa de prévia: some quando o site for publicado de verdade -->
-<div class="faixa-previa" role="note">
-  Prévia de estrutura. Cores e fontes são provisórias até a logo chegar; o que está <mark class="ac">assim</mark> falta confirmar.
-</div>
+<p class="aviso-previa" role="note">Prévia · fotos, cores e lista de tratamentos entram com o material da Monique. O que tem <span class="prov">sublinhado pontilhado</span> falta confirmar.</p>
 
 <header class="topo">
-  <a class="marca" href="#inicio" aria-label="Mo Milano Estética, início">
-    <span class="marca-nome">Mo Milano</span>
-    <span class="marca-sub">estética</span>
-  </a>
+  <a class="marca" href="#inicio" aria-label="Mo Milano Estética, início">MO MILANO <span>estética</span></a>
   <nav class="menu" aria-label="Seções">
-    <a href="#objetivo">Tratamentos</a>
-    <a href="#sobre">Sobre</a>
-    <a href="#espaco">O espaço</a>
-    <a href="#duvidas">Dúvidas</a>
+    <a href="#tratamentos">Tratamentos</a>
+    <a href="#trabalhos">Trabalhos</a>
+    <a href="#monique">A Monique</a>
+    <a href="#contato">Contato</a>
   </nav>
-  <a class="botao botao-cheio topo-agendar" data-whats="topo" href="#">Agendar</a>
+  <a class="topo-agendar" data-whats href="#">Agendar</a>
 </header>
 
 <main id="conteudo">
 
-  <!-- 1. Primeira tela -->
-  <section class="heroi" id="inicio">
-    <div class="heroi-texto">
-      <p class="heroi-local">Estética facial e corporal · <mark class="ac">cidade</mark></p>
-      <h1 class="heroi-titulo" data-palavras>Sua pele cuidada com tempo, técnica e atenção de verdade.</h1>
-      <p class="heroi-sub">Cada atendimento começa por uma avaliação: a Monique entende o seu objetivo e monta o tratamento para você.</p>
-      <div class="heroi-acoes">
-        <a class="botao botao-cheio" data-whats="avaliacao" href="#">Agendar avaliação</a>
-        <a class="botao botao-linha" href="#objetivo">Descobrir meu tratamento</a>
+  <!-- Primeira tela: texto alinhado à grade + foto em 4:5 encostada na borda -->
+  <section class="abertura" id="inicio">
+    <div class="abertura-texto">
+      <p class="sobrelinha">Estética facial e corporal em <span class="prov">Criciúma</span></p>
+      <h1>Cuidado com a pele feito com calma, técnica e um plano só seu.</h1>
+      <p class="abertura-sub">Toda cliente começa por uma avaliação. A partir dela, a Monique indica o tratamento, o número de sessões e o cuidado em casa.</p>
+      <div class="abertura-acoes">
+        <a class="botao" data-whats href="#">Agendar avaliação</a>
+        <a class="link-seta" href="#objetivo">Descobrir o tratamento ideal</a>
       </div>
     </div>
-    <figure class="heroi-foto moldura" aria-label="Espaço para a foto principal">
-      <span class="moldura-rotulo">Foto real da Monique atendendo ou do espaço<br><small>(vem do material dela)</small></span>
+    <figure class="foto r45 abertura-foto" data-ratio="4:5">
+      <figcaption>Monique atendendo · luz natural, vertical</figcaption>
     </figure>
   </section>
 
-  <!-- 2. Assinatura: escolha do objetivo -> tratamentos -> mensagem pronta -->
-  <section class="objetivo" id="objetivo" aria-labelledby="objetivo-titulo">
-    <div class="secao-cabeca">
-      <h2 id="objetivo-titulo">Qual é o seu objetivo?</h2>
-      <p>Toque no que você quer melhorar. A gente mostra os tratamentos que combinam e já deixa a mensagem pronta para o WhatsApp.</p>
-    </div>
-    <div class="chips" role="group" aria-label="Objetivos" id="chips"></div>
-    <div class="resultado" id="resultado" aria-live="polite"></div>
-    <p class="aviso-lista">Os tratamentos acima são de exemplo: <mark class="ac">troca pela lista real da Monique</mark>.</p>
+  <!-- Três fatos curtos, não números inventados -->
+  <ul class="fatos" aria-label="Como é o atendimento">
+    <li><strong>Avaliação individual</strong><span>antes de qualquer procedimento</span></li>
+    <li><strong>Hora marcada</strong><span>sem fila e sem pressa</span></li>
+    <li><strong>Plano por escrito</strong><span>sessões e cuidados em casa</span></li>
+  </ul>
+
+  <!-- Tratamentos: lista editorial agrupada, linhas finas, sem cards -->
+  <section class="tratamentos" id="tratamentos" aria-labelledby="trat-titulo">
+    <header class="secao-titulo">
+      <h2 id="trat-titulo">Tratamentos</h2>
+      <p>Lista <span class="prov">provisória</span>: troca pela lista real da Monique, com a duração de cada sessão.</p>
+    </header>
+    <div class="grupos" id="grupos"></div>
   </section>
 
-  <!-- 3. Como funciona (é uma sequência de verdade, por isso numerada) -->
+  <!-- Função: objetivo -> tratamentos recomendados -> mensagem pronta -->
+  <section class="objetivo" id="objetivo" aria-labelledby="obj-titulo">
+    <div class="objetivo-pergunta">
+      <h2 id="obj-titulo">O que você quer melhorar?</h2>
+      <p>Escolha um ou mais. A indicação final é sempre da avaliação.</p>
+      <ul class="objetivos" id="objetivos" role="group" aria-label="Objetivos"></ul>
+    </div>
+    <div class="objetivo-resposta" id="resposta" aria-live="polite"></div>
+  </section>
+
+  <!-- Trabalhos: antes e depois em 4:5, rolagem lateral no celular -->
+  <section class="trabalhos" id="trabalhos" aria-labelledby="trab-titulo">
+    <header class="secao-titulo">
+      <h2 id="trab-titulo">Trabalhos</h2>
+      <p>Publicados com autorização das clientes. O resultado varia de pessoa para pessoa.</p>
+    </header>
+    <div class="faixa-fotos">
+      <figure class="foto r45" data-ratio="4:5"><figcaption>Antes e depois · limpeza de pele</figcaption></figure>
+      <figure class="foto r45" data-ratio="4:5"><figcaption>Antes e depois · tratamento de manchas</figcaption></figure>
+      <figure class="foto r45" data-ratio="4:5"><figcaption>Detalhe de procedimento</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- Reels 9:16 -->
+  <section class="reels" aria-labelledby="reels-titulo">
+    <header class="secao-titulo linha">
+      <h2 id="reels-titulo">No Instagram</h2>
+      <a class="link-seta" href="https://www.instagram.com/momilano.estetica/" target="_blank" rel="noopener">@momilano.estetica</a>
+    </header>
+    <div class="faixa-reels">
+      <figure class="foto r916" data-ratio="9:16"><figcaption>Reel · procedimento</figcaption></figure>
+      <figure class="foto r916" data-ratio="9:16"><figcaption>Reel · bastidores</figcaption></figure>
+      <figure class="foto r916" data-ratio="9:16"><figcaption>Reel · resultado</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- A Monique -->
+  <section class="monique" id="monique" aria-labelledby="mon-titulo">
+    <figure class="foto r45 monique-foto" data-ratio="4:5"><figcaption>Retrato profissional da Monique</figcaption></figure>
+    <div class="monique-texto">
+      <h2 id="mon-titulo">A Monique</h2>
+      <p class="monique-intro">Quem te recebe é quem te atende, do primeiro contato ao fim do tratamento.</p>
+      <dl class="credenciais">
+        <div><dt>Formação</dt><dd><span class="prov">a confirmar</span></dd></div>
+        <div><dt>Especialização</dt><dd><span class="prov">a confirmar</span></dd></div>
+        <div><dt>Atende desde</dt><dd><span class="prov">a confirmar</span></dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- Como funciona: é uma sequência real -->
   <section class="passos" aria-labelledby="passos-titulo">
     <h2 id="passos-titulo">Como funciona</h2>
-    <ol class="passos-lista">
-      <li><strong>Avaliação</strong><span>Conversa sobre o que te incomoda, sua rotina e o histórico da pele.</span></li>
-      <li><strong>Plano</strong><span>Você sai sabendo quais tratamentos fazem sentido, quantas sessões e o cuidado em casa.</span></li>
-      <li><strong>Sessões</strong><span>Acompanhamento a cada visita, ajustando o plano conforme a resposta da sua pele.</span></li>
+    <ol>
+      <li><span class="passo-n">1</span><h3>Avaliação</h3><p>Conversa sobre o que te incomoda, sua rotina e o histórico da pele.</p></li>
+      <li><span class="passo-n">2</span><h3>Plano</h3><p>Você sai sabendo o tratamento, o número de sessões e os cuidados em casa.</p></li>
+      <li><span class="passo-n">3</span><h3>Acompanhamento</h3><p>A cada sessão o plano é ajustado conforme a resposta da sua pele.</p></li>
     </ol>
   </section>
 
-  <!-- 4. Quem atende -->
-  <section class="sobre" id="sobre" aria-labelledby="sobre-titulo">
-    <figure class="sobre-foto moldura"><span class="moldura-rotulo">Retrato da Monique</span></figure>
-    <div class="sobre-texto">
-      <h2 id="sobre-titulo">Quem cuida de você</h2>
-      <p>A Monique atende pessoalmente cada cliente da Mo Milano. <mark class="ac">formação, cursos e desde quando atende</mark></p>
-      <ul class="selos">
-        <li><mark class="ac">formação</mark></li>
-        <li><mark class="ac">especialização</mark></li>
-        <li><mark class="ac">anos de atendimento</mark></li>
-      </ul>
+  <section class="espaco" aria-labelledby="espaco-titulo">
+    <h2 id="espaco-titulo" class="vh">O espaço</h2>
+    <figure class="foto r169" data-ratio="16:9"><figcaption>Sala de atendimento · horizontal, sem pessoas</figcaption></figure>
+    <figure class="foto r45" data-ratio="4:5"><figcaption>Entrada ou recepção</figcaption></figure>
+  </section>
+
+  <section class="duvidas" aria-labelledby="duv-titulo">
+    <h2 id="duv-titulo">Dúvidas</h2>
+    <div class="duvidas-lista">
+      <details><summary>Preciso fazer avaliação antes?</summary><p>Sim. É nela que a Monique entende a sua pele e indica o tratamento certo. <span class="prov">Confirmar se a avaliação é cobrada.</span></p></details>
+      <details><summary>Em quanto tempo vejo resultado?</summary><p>Depende do tratamento e de como a sua pele responde. Na avaliação você recebe uma estimativa de sessões. O resultado varia de pessoa para pessoa.</p></details>
+      <details><summary>Como agendo?</summary><p>Pelo WhatsApp: toque em "Agendar avaliação" e envie a mensagem que já vem escrita.</p></details>
     </div>
+    <p class="depo-nota">Depoimentos de clientes entram aqui assim que forem autorizados.</p>
   </section>
 
-  <!-- 5. O espaço -->
-  <section class="espaco" id="espaco" aria-labelledby="espaco-titulo">
-    <h2 id="espaco-titulo">O espaço</h2>
-    <div class="galeria">
-      <figure class="moldura g1"><span class="moldura-rotulo">Fachada ou entrada</span></figure>
-      <figure class="moldura g2"><span class="moldura-rotulo">Sala de atendimento</span></figure>
-      <figure class="moldura g3"><span class="moldura-rotulo">Detalhe (produtos, maca)</span></figure>
-    </div>
-  </section>
-
-  <!-- 6. Depoimentos: só reais e autorizados, nunca inventados -->
-  <section class="depo" aria-labelledby="depo-titulo">
-    <h2 id="depo-titulo">Quem já passou por aqui</h2>
-    <div class="depo-vazio">
-      <p>Aqui entram 3 a 5 depoimentos reais de clientes (prints do WhatsApp ou avaliações do Google), com autorização.</p>
-    </div>
-  </section>
-
-  <!-- 7. Dúvidas -->
-  <section class="duvidas" id="duvidas" aria-labelledby="duvidas-titulo">
-    <h2 id="duvidas-titulo">Dúvidas</h2>
-    <details>
-      <summary>Preciso fazer avaliação antes?</summary>
-      <p>Sim. É na avaliação que a Monique entende a sua pele e indica o tratamento certo para o seu objetivo. <mark class="ac">confirmar se a avaliação é cobrada à parte</mark></p>
-    </details>
-    <details>
-      <summary>Em quanto tempo vejo resultado?</summary>
-      <p>Depende do tratamento e da resposta de cada pele. Na avaliação você recebe uma estimativa de sessões. Os resultados variam de pessoa para pessoa.</p>
-    </details>
-    <details>
-      <summary>Como agendo?</summary>
-      <p>Pelo WhatsApp: toque em "Agendar avaliação" e envie a mensagem que já vem pronta.</p>
-    </details>
-  </section>
-
-  <!-- 8. Onde fica -->
   <section class="contato" id="contato" aria-labelledby="contato-titulo">
-    <div>
-      <h2 id="contato-titulo">Onde fica</h2>
-      <p class="contato-linha"><span>Endereço</span> <mark class="ac">rua, número, bairro, cidade</mark></p>
-      <p class="contato-linha"><span>Horário</span> <mark class="ac">dias e horários</mark></p>
-      <p class="contato-linha"><span>WhatsApp</span> <mark class="ac">número de agendamento</mark></p>
-      <p class="contato-linha"><span>Instagram</span> <a href="https://www.instagram.com/momilano.estetica/" rel="noopener" target="_blank">@momilano.estetica</a></p>
-      <a class="botao botao-cheio" data-whats="contato" href="#">Agendar avaliação</a>
+    <div class="contato-texto">
+      <h2 id="contato-titulo">Agende sua avaliação</h2>
+      <dl class="contato-dados">
+        <div><dt>Endereço</dt><dd><span class="prov">rua, número e bairro</span></dd></div>
+        <div><dt>Horário</dt><dd><span class="prov">dias e horários</span></dd></div>
+        <div><dt>WhatsApp</dt><dd><span class="prov">número de agendamento</span></dd></div>
+        <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/momilano.estetica/" target="_blank" rel="noopener">@momilano.estetica</a></dd></div>
+      </dl>
+      <a class="botao" data-whats href="#">Agendar pelo WhatsApp</a>
     </div>
-    <figure class="mapa moldura"><span class="moldura-rotulo">Mapa do Google (entra quando o Perfil da Empresa existir)</span></figure>
+    <figure class="foto r43 contato-mapa" data-ratio="mapa"><figcaption>Mapa do Google · entra com o Perfil da Empresa</figcaption></figure>
   </section>
 </main>
 
 <footer class="rodape">
-  <p><strong>Mo Milano Estética</strong> · Resultados variam de pessoa para pessoa.</p>
+  <span class="marca">MO MILANO <span>estética</span></span>
+  <p>Resultados variam de pessoa para pessoa.</p>
   <p class="rodape-feito">Site por Negócios Smart</p>
 </footer>
-
 
 <script src="assets/momilano.js" defer></script>
 </body>
