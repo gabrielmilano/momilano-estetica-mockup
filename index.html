@@ -3,21 +3,38 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<!-- Prévia: fora do Google até a Monique aprovar -->
+<!-- Prévia: fora do Google até a Monique aprovar. Ao publicar: trocar por "index, follow", liberar o robots.txt e pôr o canonical. -->
 <meta name="robots" content="noindex, nofollow">
-<title>Mo Milano Estética · estética facial e corporal</title>
-<meta name="description" content="Mo Milano Estética: tratamentos faciais e corporais com avaliação individual. Agende pelo WhatsApp.">
-<meta name="theme-color" content="#f6f3ef">
-<link rel="icon" href="data:,">
+<title>Monique Milano · Estética e bem-estar em Criciúma</title>
+<meta name="description" content="Estética facial e corporal e terapias holísticas em Criciúma, com a Monique Milano, enfermeira há 10 anos. Limpeza de pele, sobrancelhas, cílios, lipodetox, modeladora e massagem relaxante. Agende pelo WhatsApp.">
+<meta name="theme-color" content="#f6ccce">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Monique Milano · Estética e bem-estar em Criciúma">
+<meta property="og:description" content="Estética facial e corporal e terapias holísticas, com o cuidado de quem é enfermeira há 10 anos.">
+<meta property="og:image" content="https://gabrielmilano.github.io/momilano-estetica-mockup/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="icon" type="image/png" href="assets/img/icone-64.png">
+<link rel="apple-touch-icon" href="assets/img/icone-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap">
-<link rel="stylesheet" href="assets/momilano.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap">
+<link rel="preload" as="image" href="assets/img/logo-tom.webp" type="image/webp">
+<link rel="stylesheet" href="assets/momilano.css?v=2">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BeautySalon",
-  "name": "Mo Milano Estética",
+  "name": "Monique Milano Estética e Bem-Estar",
+  "alternateName": "Mo Milano Estética",
+  "description": "Estética facial e corporal e terapias holísticas em Criciúma.",
+  "image": "https://gabrielmilano.github.io/momilano-estetica-mockup/assets/img/og.jpg",
+  "logo": "https://gabrielmilano.github.io/momilano-estetica-mockup/assets/img/logo-rosa.png",
+  "telephone": "+55-48-99959-2658",
+  "address": { "@type": "PostalAddress", "addressLocality": "Criciúma", "addressRegion": "SC", "addressCountry": "BR" },
+  "areaServed": "Criciúma",
+  "employee": { "@type": "Person", "name": "Monique Milano", "jobTitle": "Enfermeira e esteticista" },
   "sameAs": ["https://www.instagram.com/momilano.estetica/"]
 }
 </script>
@@ -25,150 +42,124 @@
 <body>
 <a class="pular" href="#conteudo">Pular para o conteúdo</a>
 
-<p class="aviso-previa" role="note">Prévia · fotos, cores e lista de tratamentos entram com o material da Monique. O que tem <span class="prov">sublinhado pontilhado</span> falta confirmar.</p>
-
 <header class="topo">
-  <a class="marca" href="#inicio" aria-label="Mo Milano Estética, início">MO MILANO <span>estética</span></a>
+  <a class="marca" href="#inicio" aria-label="Monique Milano, início">
+    <img src="assets/img/lotus-rosa.png" alt="" width="443" height="276">
+    <span>Monique Milano</span>
+  </a>
   <nav class="menu" aria-label="Seções">
     <a href="#tratamentos">Tratamentos</a>
-    <a href="#trabalhos">Trabalhos</a>
     <a href="#monique">A Monique</a>
-    <a href="#contato">Contato</a>
+    <a href="#onde">Onde fica</a>
   </nav>
-  <a class="topo-agendar" data-whats href="#">Agendar</a>
+  <a class="topo-agendar" data-whats href="https://wa.me/5548999592658">Agendar</a>
 </header>
 
 <main id="conteudo">
 
-  <!-- Primeira tela: texto alinhado à grade + foto em 4:5 encostada na borda -->
+  <!-- Primeira tela: a marca dela no rosa dos destaques do Instagram -->
   <section class="abertura" id="inicio">
-    <div class="abertura-texto">
-      <p class="sobrelinha">Estética facial e corporal em <span class="prov">Criciúma</span></p>
-      <h1>Cuidado com a pele feito com calma, técnica e um plano só seu.</h1>
-      <p class="abertura-sub">Toda cliente começa por uma avaliação. A partir dela, a Monique indica o tratamento, o número de sessões e o cuidado em casa.</p>
-      <div class="abertura-acoes">
-        <a class="botao" data-whats href="#">Agendar avaliação</a>
-        <a class="link-seta" href="#objetivo">Descobrir o tratamento ideal</a>
-      </div>
+    <div class="abertura-marca">
+      <img src="assets/img/logo-tom.webp" alt="Monique Milano, Estética e Bem-Estar" width="800" height="341" fetchpriority="high">
     </div>
-    <figure class="foto r45 abertura-foto" data-ratio="4:5">
-      <figcaption>Monique atendendo · luz natural, vertical</figcaption>
-    </figure>
+    <div class="abertura-texto">
+      <p class="sobrelinha">Estética facial e corporal · Terapias holísticas · Criciúma</p>
+      <h1>Estética e bem-estar com o cuidado de quem é enfermeira há 10 anos.</h1>
+      <p class="abertura-sub">Do rosto ao corpo, com hora marcada e atenção só para você. Cuidando do corpo e da alma.</p>
+      <a class="botao" data-whats href="https://wa.me/5548999592658">Agendar pelo WhatsApp</a>
+      <a class="link-seta" href="#objetivo">Não sabe por onde começar?</a>
+    </div>
   </section>
 
-  <!-- Três fatos curtos, não números inventados -->
-  <ul class="fatos" aria-label="Como é o atendimento">
-    <li><strong>Avaliação individual</strong><span>antes de qualquer procedimento</span></li>
-    <li><strong>Hora marcada</strong><span>sem fila e sem pressa</span></li>
-    <li><strong>Plano por escrito</strong><span>sessões e cuidados em casa</span></li>
-  </ul>
-
-  <!-- Tratamentos: lista editorial agrupada, linhas finas, sem cards -->
+  <!-- Tratamentos: os mesmos destaques do Instagram dela, em lista -->
   <section class="tratamentos" id="tratamentos" aria-labelledby="trat-titulo">
     <header class="secao-titulo">
-      <h2 id="trat-titulo">Tratamentos</h2>
-      <p>Lista <span class="prov">provisória</span>: troca pela lista real da Monique, com a duração de cada sessão.</p>
+      <p class="sobrelinha">Tratamentos</p>
+      <h2 id="trat-titulo">Para o rosto, para o corpo e para desacelerar.</h2>
     </header>
     <div class="grupos" id="grupos"></div>
+    <p class="trat-nota">Procura outro cuidado? <a data-whats href="https://wa.me/5548999592658">Pergunte no WhatsApp</a>.</p>
   </section>
 
-  <!-- Função: objetivo -> tratamentos recomendados -> mensagem pronta -->
+  <!-- Função: objetivo -> tratamentos que combinam -> mensagem pronta -->
   <section class="objetivo" id="objetivo" aria-labelledby="obj-titulo">
     <div class="objetivo-pergunta">
-      <h2 id="obj-titulo">O que você quer melhorar?</h2>
-      <p>Escolha um ou mais. A indicação final é sempre da avaliação.</p>
+      <img class="objetivo-lotus" src="assets/img/lotus-branca.png" alt="" width="443" height="276" loading="lazy">
+      <h2 id="obj-titulo">O que você quer cuidar?</h2>
+      <p>Escolha um ou mais. A Monique confirma o melhor caminho na conversa.</p>
       <ul class="objetivos" id="objetivos" role="group" aria-label="Objetivos"></ul>
     </div>
     <div class="objetivo-resposta" id="resposta" aria-live="polite"></div>
   </section>
 
-  <!-- Trabalhos: antes e depois em 4:5, rolagem lateral no celular -->
-  <section class="trabalhos" id="trabalhos" aria-labelledby="trab-titulo">
-    <header class="secao-titulo">
-      <h2 id="trab-titulo">Trabalhos</h2>
-      <p>Publicados com autorização das clientes. O resultado varia de pessoa para pessoa.</p>
-    </header>
-    <div class="faixa-fotos">
-      <figure class="foto r45" data-ratio="4:5"><figcaption>Antes e depois · limpeza de pele</figcaption></figure>
-      <figure class="foto r45" data-ratio="4:5"><figcaption>Antes e depois · tratamento de manchas</figcaption></figure>
-      <figure class="foto r45" data-ratio="4:5"><figcaption>Detalhe de procedimento</figcaption></figure>
-    </div>
-  </section>
-
-  <!-- Reels 9:16 -->
-  <section class="reels" aria-labelledby="reels-titulo">
-    <header class="secao-titulo linha">
-      <h2 id="reels-titulo">No Instagram</h2>
-      <a class="link-seta" href="https://www.instagram.com/momilano.estetica/" target="_blank" rel="noopener">@momilano.estetica</a>
-    </header>
-    <div class="faixa-reels">
-      <figure class="foto r916" data-ratio="9:16"><figcaption>Reel · procedimento</figcaption></figure>
-      <figure class="foto r916" data-ratio="9:16"><figcaption>Reel · bastidores</figcaption></figure>
-      <figure class="foto r916" data-ratio="9:16"><figcaption>Reel · resultado</figcaption></figure>
-    </div>
-  </section>
-
   <!-- A Monique -->
   <section class="monique" id="monique" aria-labelledby="mon-titulo">
-    <figure class="foto r45 monique-foto" data-ratio="4:5"><figcaption>Retrato profissional da Monique</figcaption></figure>
+    <div class="monique-cab">
+      <img class="monique-foto" src="assets/img/monique-150.webp" alt="Monique Milano" width="150" height="150" loading="lazy">
+      <div>
+        <p class="sobrelinha">Quem cuida de você</p>
+        <h2 id="mon-titulo">Monique Milano</h2>
+      </div>
+    </div>
     <div class="monique-texto">
-      <h2 id="mon-titulo">A Monique</h2>
-      <p class="monique-intro">Quem te recebe é quem te atende, do primeiro contato ao fim do tratamento.</p>
+      <p class="monique-intro">Enfermeira há 10 anos, a Monique levou para a estética o olhar de quem vem da saúde.</p>
+      <p>Ela junta os tratamentos faciais e corporais às terapias holísticas, porque cuidar da aparência e cuidar de como você se sente andam juntos. É ela quem conversa com você, indica o tratamento e faz o atendimento do começo ao fim.</p>
       <dl class="credenciais">
-        <div><dt>Formação</dt><dd><span class="prov">a confirmar</span></dd></div>
-        <div><dt>Especialização</dt><dd><span class="prov">a confirmar</span></dd></div>
-        <div><dt>Atende desde</dt><dd><span class="prov">a confirmar</span></dd></div>
+        <div><dt>Formação</dt><dd>Enfermagem</dd></div>
+        <div><dt>Na saúde há</dt><dd>10 anos</dd></div>
+        <div><dt>Atende em</dt><dd>Criciúma, SC</dd></div>
       </dl>
     </div>
   </section>
 
-  <!-- Como funciona: é uma sequência real -->
+  <!-- Como funciona -->
   <section class="passos" aria-labelledby="passos-titulo">
     <h2 id="passos-titulo">Como funciona</h2>
     <ol>
-      <li><span class="passo-n">1</span><h3>Avaliação</h3><p>Conversa sobre o que te incomoda, sua rotina e o histórico da pele.</p></li>
-      <li><span class="passo-n">2</span><h3>Plano</h3><p>Você sai sabendo o tratamento, o número de sessões e os cuidados em casa.</p></li>
-      <li><span class="passo-n">3</span><h3>Acompanhamento</h3><p>A cada sessão o plano é ajustado conforme a resposta da sua pele.</p></li>
+      <li><span class="passo-n">1</span><div><h3>Conversa no WhatsApp</h3><p>Você conta o que quer cuidar e combina o melhor dia e horário.</p></div></li>
+      <li><span class="passo-n">2</span><div><h3>Avaliação no atendimento</h3><p>A Monique entende a sua pele, o seu corpo e a sua rotina antes de começar.</p></div></li>
+      <li><span class="passo-n">3</span><div><h3>Acompanhamento</h3><p>Nos tratamentos em sessões, o plano vai sendo ajustado conforme a sua resposta.</p></div></li>
     </ol>
   </section>
 
-  <section class="espaco" aria-labelledby="espaco-titulo">
-    <h2 id="espaco-titulo" class="vh">O espaço</h2>
-    <figure class="foto r169" data-ratio="16:9"><figcaption>Sala de atendimento · horizontal, sem pessoas</figcaption></figure>
-    <figure class="foto r45" data-ratio="4:5"><figcaption>Entrada ou recepção</figcaption></figure>
+  <!-- Prova: os feedbacks reais ficam no Instagram; não reproduzimos nada sem autorização -->
+  <section class="feedbacks" aria-labelledby="feed-titulo">
+    <h2 id="feed-titulo">Quem já passou por aqui conta como foi.</h2>
+    <p>Os feedbacks das clientes, os resultados e o dia a dia dos atendimentos estão nos destaques do Instagram.</p>
+    <a class="link-seta" href="https://www.instagram.com/momilano.estetica/" target="_blank" rel="noopener">Ver no @momilano.estetica</a>
   </section>
 
   <section class="duvidas" aria-labelledby="duv-titulo">
     <h2 id="duv-titulo">Dúvidas</h2>
     <div class="duvidas-lista">
-      <details><summary>Preciso fazer avaliação antes?</summary><p>Sim. É nela que a Monique entende a sua pele e indica o tratamento certo. <span class="prov">Confirmar se a avaliação é cobrada.</span></p></details>
-      <details><summary>Em quanto tempo vejo resultado?</summary><p>Depende do tratamento e de como a sua pele responde. Na avaliação você recebe uma estimativa de sessões. O resultado varia de pessoa para pessoa.</p></details>
-      <details><summary>Como agendo?</summary><p>Pelo WhatsApp: toque em "Agendar avaliação" e envie a mensagem que já vem escrita.</p></details>
+      <details><summary>Onde é o atendimento?</summary><p>No Hair Spa Eduarda Marques, em Criciúma. Ao agendar, a Monique te passa o endereço e como chegar.</p></details>
+      <details><summary>Como faço para agendar?</summary><p>Pelo WhatsApp (48) 99959-2658. Toque em "Agendar" em qualquer parte do site e a mensagem já vai escrita.</p></details>
+      <details><summary>Não sei qual tratamento escolher. E agora?</summary><p>Use o "O que você quer cuidar?" mais acima ou só conte no WhatsApp o que te incomoda. A indicação é feita na avaliação.</p></details>
+      <details><summary>Em quanto tempo vejo resultado?</summary><p>Depende do tratamento e de como o seu corpo responde. Alguns cuidados são de uma sessão, outros funcionam em pacote. O resultado varia de pessoa para pessoa.</p></details>
     </div>
-    <p class="depo-nota">Depoimentos de clientes entram aqui assim que forem autorizados.</p>
   </section>
 
-  <section class="contato" id="contato" aria-labelledby="contato-titulo">
-    <div class="contato-texto">
-      <h2 id="contato-titulo">Agende sua avaliação</h2>
+  <section class="onde" id="onde" aria-labelledby="onde-titulo">
+    <div class="onde-texto">
+      <h2 id="onde-titulo">Agende seu horário</h2>
       <dl class="contato-dados">
-        <div><dt>Endereço</dt><dd><span class="prov">rua, número e bairro</span></dd></div>
-        <div><dt>Horário</dt><dd><span class="prov">dias e horários</span></dd></div>
-        <div><dt>WhatsApp</dt><dd><span class="prov">número de agendamento</span></dd></div>
+        <div><dt>Onde</dt><dd>Hair Spa Eduarda Marques<br>Criciúma, SC</dd></div>
+        <div><dt>Atendimento</dt><dd>Com hora marcada</dd></div>
+        <div><dt>WhatsApp</dt><dd><a data-whats href="https://wa.me/5548999592658">(48) 99959-2658</a></dd></div>
         <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/momilano.estetica/" target="_blank" rel="noopener">@momilano.estetica</a></dd></div>
       </dl>
-      <a class="botao" data-whats href="#">Agendar pelo WhatsApp</a>
+      <a class="botao" data-whats href="https://wa.me/5548999592658">Agendar pelo WhatsApp</a>
     </div>
-    <figure class="foto r43 contato-mapa" data-ratio="mapa"><figcaption>Mapa do Google · entra com o Perfil da Empresa</figcaption></figure>
+    <img class="onde-logo" src="assets/img/logo-rosa.webp" alt="" width="800" height="341" loading="lazy">
   </section>
 </main>
 
 <footer class="rodape">
-  <span class="marca">MO MILANO <span>estética</span></span>
+  <p><strong>Monique Milano</strong> · Estética e Bem-Estar · Criciúma, SC</p>
   <p>Resultados variam de pessoa para pessoa.</p>
-  <p class="rodape-feito">Site por Negócios Smart</p>
+  <p class="rodape-feito">Site por <a href="https://negociosmart.com.br" target="_blank" rel="noopener">Negócios Smart</a></p>
 </footer>
 
-<script src="assets/momilano.js" defer></script>
+<script src="assets/momilano.js?v=2" defer></script>
 </body>
 </html>
