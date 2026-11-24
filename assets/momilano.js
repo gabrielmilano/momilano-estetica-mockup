@@ -78,7 +78,7 @@ function responder() {
 }
 
 for (const o of OBJETIVOS) {
-  const li = document.createElement("li");
+
   const b = document.createElement("button");
   b.type = "button";
   b.textContent = o.rotulo;
@@ -88,8 +88,8 @@ for (const o of OBJETIVOS) {
     b.setAttribute("aria-pressed", String(escolhidos.has(o.id)));
     responder();
   });
-  li.appendChild(b);
-  ul.appendChild(li);
+
+  ul.appendChild(b);
 }
 responder();
 
